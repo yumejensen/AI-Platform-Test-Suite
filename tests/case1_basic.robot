@@ -19,7 +19,6 @@ ${3_DOTS_ICON_BIG}    xpath\=//cds-icon[@shape='SystemAndDevicesDotsThreeRegular
 *** Test Cases ***
 Verify workspace creation functionality
     [Documentation]    Login to the AI platform and create a workspace
-    Login to Copado AI Platform
     ClickText       My Workspace
     ClickText       All Workspaces    timeout=5s
     ClickText    Create Workspace
@@ -59,4 +58,3 @@ Verify workspace deletion functionality
     ClickText    Delete Workspace
     ClickText    Delete
     VerifyNoText    ${WORKSPACE_NAME}    timeout=15s
-
